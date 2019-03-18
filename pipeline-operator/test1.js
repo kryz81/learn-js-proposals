@@ -9,10 +9,10 @@ function exclaim(str) {
   return str + "!";
 }
 
-// the old way:
+// the old way
 const result1 = exclaim(capitalize(doubleSay("hello world")));
 console.log(result1);
 
-// the new way:
+// the new way
 const result2 = "hello world" |> doubleSay |> capitalize |> exclaim;
 console.log(result2);
